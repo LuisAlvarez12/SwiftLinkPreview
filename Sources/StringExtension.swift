@@ -7,14 +7,11 @@
 //
 import Foundation
 
-#if os(iOS) || os(watchOS) || os(tvOS)
-
-    import UIKit
-
-#elseif os(OSX)
+#if os(OSX)
 
     import Cocoa
-
+#else
+    import UIKit
 #endif
 
 extension String {
